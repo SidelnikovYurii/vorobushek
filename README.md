@@ -1,4 +1,4 @@
-# ![](https://raw.githubusercontent.com/SidelnikovYurii/switter/master/src/main/webapp/public/app/img/sparow-48x24.png) Vorobushek
+# ![](https://raw.githubusercontent.com/SidelnikovYurii/vorobushek/master/src/main/webapp/public/app/img/sparow-48x28.png) Vorobushek
 
 ### Run application
 
