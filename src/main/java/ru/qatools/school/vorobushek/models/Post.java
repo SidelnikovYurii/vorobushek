@@ -46,6 +46,7 @@ public class Post extends Model {
     public int getCommentsCount(){
         return this.getAll(Comment.class).size();
     }
+<<<<<<< HEAD
 
     public void setUser(User user){
         this.setParent(user);
@@ -54,4 +55,6 @@ public class Post extends Model {
     public User getUser(){
         return this.parent(User.class);
     }
+=======
+>>>>>>> FETCH_HEAD
 }

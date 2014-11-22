@@ -16,10 +16,14 @@
                             Comments
                         </li>
                         <#list model.comments as comment>
+<<<<<<< HEAD
                             <li class="list-group-item">${comment.body}
 
                             by ${comment.user.displayName}
                             </li>
+=======
+                            <li class="list-group-item">${comment.body}</li>
+>>>>>>> FETCH_HEAD
                         </#list>
                     </ul>
 

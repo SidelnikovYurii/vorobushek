@@ -14,6 +14,7 @@ public class Comment extends Model {
     public void setBody(String body) {
         setString("body", body);
     }
+<<<<<<< HEAD
 
     public void setUser(User user){
         this.setParent(user);
@@ -22,4 +23,6 @@ public class Comment extends Model {
     public User getUser(){
         return this.parent(User.class);
     }
+=======
+>>>>>>> FETCH_HEAD
 }
