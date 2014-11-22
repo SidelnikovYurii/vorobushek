@@ -3,11 +3,8 @@ package ru.qatools.school.vorobushek.service;
 import com.squareup.okhttp.*;
 import org.flywaydb.core.Flyway;
 import org.javalite.activejdbc.Base;
-<<<<<<< HEAD
 import org.javalite.activejdbc.LazyList;
-import org.javalite.activejdbc.Model;
-=======
->>>>>>> FETCH_HEAD
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -95,14 +92,11 @@ public class DatabaseProvider implements ContainerRequestFilter {
 
     public static User GetYandexUser(String access_token) throws IOException, JSONException {
 
-<<<<<<< HEAD
         if (access_token == null || access_token.isEmpty()){
             LazyList<User> users = User.findBySQL("select * from users where displayName='Guest'");
             return users.get(0);
         }
 
-=======
->>>>>>> FETCH_HEAD
         String url = "https://login.yandex.ru/info?" +
                 "format=json" +
                 "&oauth_token="+access_token;
@@ -121,7 +115,7 @@ public class DatabaseProvider implements ContainerRequestFilter {
         String email = passportJson.getString("default_email");
         String displayName = passportJson.getString("display_name");
 
-<<<<<<< HEAD
+
         LazyList<User> users = User.findBySQL(format("select * from users where login='%s' and email='%s' and displayName='%s'", login, email, displayName));
         if (users.isEmpty()){
             User user = new User();
@@ -133,9 +127,6 @@ public class DatabaseProvider implements ContainerRequestFilter {
         }
 
         return users.get(0);
-=======
-        return new User(login,email,displayName);
->>>>>>> FETCH_HEAD
     }
 
     @Override
